@@ -11,9 +11,6 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
 
 body {
     display: flex;
@@ -28,6 +25,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -182,6 +181,13 @@ header {
     align-items: center;
     gap: 10px;
     font-size: 16px;
+}
+.fa-solid {
+    color: var(--main-color);
+
+}
+.fa-fire,.fa-heart,.fa-person,.fa-money-bill-wave{
+    font-size: 22px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -441,7 +447,7 @@ footer section {
 
 @media (max-width: 767.98px) {
     .main-container {
-        padding: 0 20px;
+        padding: 0;
         display:flex;
         flex-direction: column;
         gap: 30px;
@@ -450,6 +456,13 @@ footer section {
     header {
         flex-direction: column;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #booki-logo{
+        padding:30px 50px 30px 50px;
     }
     .menu{
         display: flex;
@@ -483,7 +496,9 @@ footer section {
         bottom: 0;
         left: 0;
     }
-
+    .hero{
+        padding:0 20px;
+    }
     .recherche {
         width: 100%;
     }
@@ -523,6 +538,9 @@ footer section {
     }
     .hebergements{
         order: 2;
+    }
+    .hebergements-and-populaires .hebergements{
+        background-color: white;
     }
     .hebergements-cards a,
     .populaires-cards a,
